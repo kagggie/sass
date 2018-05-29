@@ -1,0 +1,57 @@
+@media all and (max-width: 992px) {
+    #main-nav #nav-elements {
+        text-align: center;
+    }
+
+    #container-header h1 {
+        font-size: 50px;
+    }
+
+    #container-header h2 {
+        font-size: 25px;
+    }
+
+    #skills-row {
+        padding: 30px;
+    }
+
+    #skills-row figure {
+        padding-bottom: 20px;
+    }
+
+    .portfolio-images {
+        margin-bottom: 20px;
+    }
+
+    #form form:first-child {
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #container-header h1 {
+        font-size: 45px;
+    }
+
+    #container-header h2 {
+        font-size: 23px;
+    }
+
+    #contact-me {
+        margin-left: 20px;
+    }
+
+    #form input[type="button"] {
+        width: 25%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #container-header h1 {
+        font-size: 40px;
+    }
+
+    #container-header h2 {
+        font-size: 20px;
+    }
+}

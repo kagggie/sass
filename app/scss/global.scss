@@ -1,0 +1,31 @@
+@import "zmienne";
+
+body {
+    margin: 0;
+    color: #291f1a;
+    background-color: $base-color;
+    font-family: $base-font;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.green {
+    color: $green-color;
+}
+
+.title {
+    font-family: $second-font;
+    font-weight: $slim;
+    font-size: 30px;
+    line-height: 100px;
+}
+ 
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';

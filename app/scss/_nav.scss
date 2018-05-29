@@ -1,0 +1,14 @@
+@import "zmienne";
+
+#main-nav {
+    a {
+        color: $green-color;
+        text-transform: lowercase;
+        font-weight: 400;
+        margin: 0 40px;
+    }
+    button {
+        outline: none;
+    }
+
+} 

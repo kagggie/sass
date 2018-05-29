@@ -1,0 +1,58 @@
+@import "zmienne";
+@import 'mixins';
+
+#portfolio {
+    text-align: center;
+    padding-bottom: 100px;
+
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #portfolio-img1 {
+        background-image: url("../img/portfolio1.jpg");
+    }
+
+    #portfolio-img2 {
+        background-image: url("../img/portfolio2.jpg");
+    }
+
+    #portfolio-img3 {
+        background-image: url("../img/portfolio3.jpg");
+    }
+
+    .portfolio-images {
+        height: 330px;
+        width: 100%;
+        @include responsiveImg;
+
+        .mask {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: $white;
+            height: $max;
+            opacity: 0;
+            transition: all 0.4s;
+            font-size: 13px;
+            padding: 10px;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .border-portfolio {
+                border: 1px solid $white;
+                height: $max;
+                position: relative;
+
+                .content-portfolio {
+                    position: absolute;
+                    width: $max;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    text-align: center;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

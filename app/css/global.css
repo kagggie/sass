@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    color: #291f1a;
+    background-color: #f9fcfe;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.green {
+    color: #40e512;
+}
+
+.title {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+#main-nav a {
+    color: #40e512;
+    text-transform: lowercase;
+    font-weight: 400;
+    margin: 0 40px;
+}
+
+#main-nav button {
+    outline: none;
+}
+
+#header {
+    background-image: url("../img/header-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+#header #container-header {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+#header #container-header h1 {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+#header #container-header h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#about {
+    box-shadow: 0px 7px 18px 0px #d4ccd4;
+    z-index: 2;
+    padding-bottom: 50px;
+    margin-top: 5px;
+}
+
+#about h2 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#about #img-about {
+    text-align: center;
+}
+
+#about #img-about img {
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#skills {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#skills h2 {
+    padding-top: 30px;
+}
+
+#skills #skills-row {
+    padding: 50px;
+}
+
+#portfolio {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#portfolio h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#portfolio #portfolio-img1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+#portfolio #portfolio-img2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+#portfolio #portfolio-img3 {
+    background-image: url("../img/portfolio3.jpg");
+}
+
+#portfolio .portfolio-images {
+    height: 330px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio .portfolio-images .mask {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#portfolio .portfolio-images .mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-images .mask .border-portfolio {
+    border: 1px solid white;
+    height: 100%;
+    position: relative;
+}
+
+#portfolio .portfolio-images .mask .border-portfolio .content-portfolio {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 5px;
+}
+
+#contact {
+    background-color: #213b50;
+}
+
+#contact #contact-me {
+    color: white;
+}
+
+#contact #contact-me h2 {
+    padding-top: 40px;
+}
+
+#contact #contact-me address {
+    margin-top: 30px;
+    font-style: normal;
+}
+
+#contact #contact-me a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    margin: 60px 20px 30px 0px;
+    background-color: #213b50;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    transition: all 0.4s;
+}
+
+#contact #contact-me a:hover {
+    background-color: white;
+    border: 1px solid #213b50;
+    color: #213b50;
+}
+
+#contact #form input[type="text"] {
+    width: 100%;
+    background-color: #376284;
+    border: none;
+    color: #eff1f2;
+    padding: 10px;
+}
+
+#contact #form input[type="text"]::placeholder {
+    color: #9ea39c;
+}
+
+#contact #form input[name="email"] {
+    margin-top: 20px;
+}
+
+#contact #form textarea {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #376284;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#contact #form textarea::placeholder {
+    color: #9ea39c;
+}
+
+#contact #form input[type="button"] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #5ac92e;
+    color: whitesmoke;
+    background-color: #5ac92e;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 15%;
+    float: right;
+    transition: all 0.4s;
+}
+
+#contact #form input[type="button"]:hover {
+    border: 1px solid #5ac92e;
+    background-color: whitesmoke;
+    color: #5ac92e;
+}
+
+#contact #form form:first-child {
+    margin-top: 100px;
+}
+
+#footer p {
+    color: white;
+    padding-left: 100px;
+    margin: 0;
+    line-height: 30px;
+    background-color: #1f2f49;
+    font-size: 13px;
+}

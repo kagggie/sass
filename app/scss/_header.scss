@@ -1,0 +1,31 @@
+@import "zmienne";
+@import 'mixins';
+
+#header {
+    background-image: url("../img/header-background.jpg");
+    @include responsiveImg;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+    #container-header {
+        position: absolute;
+        width: $max;
+        transform: translateY(-50%);
+        top: 50%;
+        color: $white;
+        font-family: $second-font;
+
+        h1 {
+            font-weight: $slim;
+            font-size: 60px;
+        }
+        
+        h2 {
+            font-weight: $slim;
+            font-size: 30px;
+        }
+    }
+}
+
+

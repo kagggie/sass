@@ -1,0 +1,94 @@
+@import "zmienne";
+
+#contact {
+    background-color: $color-blue;
+
+    #contact-me {
+        color: $white;
+
+        h2 {
+            padding-top: 40px;
+        }
+
+        address {
+            margin-top: 30px;
+            font-style: normal;
+        }
+
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 35px;
+            text-align: center;
+            margin: 60px 20px 30px 0px;
+            background-color: $color-blue;
+            border: 1px solid $white;
+            color: $white;
+            font-size: 25px;
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: $white;
+                border: 1px solid $color-blue;
+                color: $color-blue;
+            }
+
+        }
+    }
+    
+    #form {
+        input[type="text"] {
+            width: $max;
+            background-color: #376284;
+            border: none;
+            color: #eff1f2;
+            padding: 10px;
+        }
+        
+        input[type="text"]::placeholder {
+            color: #9ea39c;
+        }
+        
+        input[name="email"] {
+            margin-top: 20px;
+        }
+        
+        textarea {
+            width: $max;
+            margin-top: 20px;
+            background-color: #376284;
+            border: none;
+            color: $white;
+            padding: 10px;
+        }
+        
+        textarea::placeholder {
+            color: #9ea39c;
+        }
+        
+        input[type="button"] {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 1px solid $green-contact;
+            color: whitesmoke;
+            background-color: $green-contact;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 15%;
+            float: right;
+            transition: all 0.4s;
+            
+            &:hover {
+                border: 1px solid $green-contact;
+                background-color: whitesmoke;
+                color: $green-contact;
+            }
+        }
+        
+        form:first-child {
+            margin-top: 100px;
+        }
+    }
+}
